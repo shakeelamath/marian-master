@@ -48,38 +48,52 @@
     color: #333; /* Set the title color as needed */
     margin-bottom: 30px;
 }
-
 .hidden-projects {
-    display: none;
-}
+        display: none;
+        transition: max-height 0.3s ease-out; /* Add transition effect */
+        overflow: hidden;
+    }
 
-.horizontal-projects {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-}
+    .horizontal-projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
 
-.country-projects {
-    text-align: center;
-}
+    .country-projects {
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
 
-.country-projects h3 {
-    font-size: 24px;
-    color: #555; /* Set the country title color as needed */
-}
+    .country-projects h3 {
+        font-size: 24px;
+        color: #555; /* Set the country title color as needed */
+    }
 
-.country-projects ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0;
-}
+    .country-projects ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
 
-.country-projects li {
-    font-size: 18px;
-    color: #777; /* Set the project item color as needed */
-    margin-bottom: 8px;
-}
+    .country-projects li {
+        font-size: 18px;
+        color: #777; /* Set the project item color as needed */
+        margin-bottom: 8px;
+    }
 
+    .arrow-icon {
+        cursor: pointer;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 767px) {
+        .horizontal-projects {
+            flex-direction: column;
+            align-items: center; /* Stack items vertically on smaller screens */
+        }
+    }
         </style>
    </head>
 
@@ -209,7 +223,7 @@
             </div>
         </section>
         <!-- Make customer End-->
-       <!-- Projects Worked On Start -->
+   <!-- Projects Worked On Start -->
 <section class="projects-worked-on-area customar-padding fix">
     <div class="container-fluid p-0">
         <div class="row">
@@ -224,8 +238,11 @@
                 <!-- Projects List -->
                 <div class="horizontal-projects" id="projectContainer">
                     <!-- Projects under USA -->
-                    <div class="country-projects" onclick="toggleProjects('usa-projects')">
-                        <h3>USA</h3>
+                    <div class="country-projects">
+                        <h3>
+                            USA
+                            <span class="arrow-icon" onclick="toggleProjects('usa-projects', event)">&#9660;</span>
+                        </h3>
                         <ul id="usa-projects" class="hidden-projects">
                             <li>Project 1</li>
                             <li>Project 2</li>
@@ -234,8 +251,11 @@
                     </div>
 
                     <!-- Projects under Canada -->
-                    <div class="country-projects" onclick="toggleProjects('canada-projects')">
-                        <h3>Canada</h3>
+                    <div class="country-projects">
+                        <h3>
+                            Canada
+                            <span class="arrow-icon" onclick="toggleProjects('canada-projects', event)">&#9660;</span>
+                        </h3>
                         <ul id="canada-projects" class="hidden-projects">
                             <li>Project A</li>
                             <li>Project B</li>
@@ -249,10 +269,9 @@
     </div>
 </section>
 <!-- Projects Worked On End -->
-
 <!-- JavaScript to toggle project visibility -->
 <script>
-    function toggleProjects(id) {
+   function toggleProjects(id) {
         var projects = document.getElementById(id);
         projects.classList.toggle('hidden-projects');
     }

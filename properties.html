@@ -25,6 +25,76 @@
         <link rel="stylesheet" href="assets/css/nice-select.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+        <style>
+           
+    
+            .centered-content {
+                text-align: center;
+            }
+    
+            .centered-content p,
+            .centered-content ul {
+                margin: 0;
+            }
+            /* Add these styles to your existing stylesheet or create a new one */
+
+.projects-worked-on-area {
+    background-color: #f5f5f5; /* Set the background color as needed */
+    padding: 50px 0; /* Adjust the padding as needed */
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #333; /* Set the title color as needed */
+    margin-bottom: 30px;
+}
+.hidden-projects {
+        display: none;
+        transition: max-height 0.3s ease-out; /* Add transition effect */
+        overflow: hidden;
+    }
+
+    .horizontal-projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .country-projects {
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+    .country-projects h3 {
+        font-size: 24px;
+        color: #555; /* Set the country title color as needed */
+    }
+
+    .country-projects ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .country-projects li {
+        font-size: 18px;
+        color: #777; /* Set the project item color as needed */
+        margin-bottom: 8px;
+    }
+
+    .arrow-icon {
+        cursor: pointer;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 767px) {
+        .horizontal-projects {
+            flex-direction: column;
+            align-items: center; /* Stack items vertically on smaller screens */
+        }
+    }
+        </style>
    </head>
 
    <body>
@@ -60,19 +130,16 @@
                                 <nav>
                                     <ul id="navigation">                                                                                                                                     
                                         <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Service</a></li>
-                                        <li><a href="commodities.html">Commodities</a></li>
-                                        <li><a href="blog.html">Blog</a>
+                                     
+                                        
+                                        <li><a href="#">Services</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a>
-                                                <li><a href="elements.html">Element</a></li>
+                                                <li><a href="properties.html">Properties</a></li>
+                                                <li><a href="commodities.html">Commodities</a></li>
+                                                <li><a href="construction.html">Construction</a></li>
+                                                <li><a href="marine.html">Marine</a></li>
+                                                <li><a href="petroleum.html">Petroleum</a></li>
+                                                <li><a href="finance.html">Finance</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -128,23 +195,305 @@
                    </div>
                     <div class=" col-xl-6 col-lg-4">
                         <div class="customer-caption">
-                            <h2>Where dreams take shape and visions become reality.</h2>
+                            <h2> Where dreams take shape and visions become reality.</h2>
                             <div class="caption-details">
                                 <p>Our Real estate, retail and shopping malls, hospitality, and leisure, shapes new lifestyles, through its commitment to design excellence, build quality, and timely delivery. From sprawling residential communities to iconic commercial complexes, each project we undertake is a testament to our dedication in creating spaces that inspire, uplift, and endure.
                                     As a premier project developer, we pride ourselves on our unwavering commitment to excellence, innovation, and transformative design. 
-                                    
                                     We don't just build structures; we craft experiences that resonate with the unique needs and aspirations of modern-day living. Our team of architects, engineers, and designers work tirelessly to seamlessly integrate cutting-edge technology, sustainable practices, and timeless aesthetics into every facet of our projects.
-                                    
                                     Join us on this journey of innovation and transformation to discover the endless possibilities that await in the world of success.
+                                    
+                                    
                                      </p>
                             </div>
                             
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>
         <!-- Make customer End-->
+         <!-- Projects Worked On Start -->
+<section class="projects-worked-on-area customar-padding fix">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center mb-70">
+                    <h2>Projects</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Projects List -->
+                <div class="horizontal-projects" id="projectContainer">
+                    <!-- Projects under USA -->
+                    <div class="country-projects">
+                        <h3>
+                            USA
+                            <span class="arrow-icon" onclick="toggleProjects('usa-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="usa-projects" class="hidden-projects">
+                            <li>The Standard Downtown Shreveport Lofts – USA</li>
+                            <li>The Reserve at Shoe Creek</li>
+                            <li>Shoppes at Belle mead</li>
+                            <li>HILTON DALLAS/PARK CITIES DALLAS</li>
+                            <li>HYATT REGENCY HILL COUNTRY RESORT & SPA SAN ANTONIO, TEXAS</li>
+                            <li>HYATT REGENCY DALLAS & REUNION TOWER DALLAS, TEXAS</li>
+                            <li>MOUNTAIN SHADOWS, PARADISE VALLEY, ARIZONA</li>
+                            <li>HILTON GARDEN INN WASHINGTON DC DOWNTOWN, WASHINGTON DC</li>
+                            <li>HILTON LOS ANGELES CULVER CITY, CULVER CITY, CA</li>
+                            <li>GRAND HYATT DFW, DALLAS/FORT WORTH INTERNATIONAL AIRPORT, TX</li>
+                            <li>HOTEL COLEE, ATLANTA, GEORGIA</li>
+                            <li>ENTRADA, CULVER CITY, CA</li>
+                            <li>HYATT PLACE SUGAR LAND, SUGAR LAND, TX</li>
+                            <li>HYATT REGENCY TYSONS CORNER CENTER, TYSONS, VIRGINIA</li>
+                            <li>U.S. BANK TOWER OBSERVATION DECK, LOS ANGELES, CALIFORNIA</li>
+                            <li>12099 LUNA ROAD, LUNA ROAD FARMERS BRANCH, TX 75234</li>
+                            <li>29 JAY STREET BRIDGE PARK, BROOKLYN’S HISTORIC DUMBO NEIGHBORHOOD, EAST TO BROOKLYN</li>
+                            <li>131 Duane Street, Ribeca South Historic District, New York Residence Inc. Square Foot 37,000 SF, Jonathan Schloss Architect</li>
+                            <li>TOWNEPLACE SUITES DES MOINES WEST-JORDAN CREEK WEST DES MOINES, IA</li>
+                            <li>TOWNEPLACE SUITES FORT WALTON BEACH-EGLIN AFB FORT WALTON BEACH-EGLIN AFB</li>
+                            <li>KIERLAND COMMON PHOENIX/SCOTTSDALE, AZ</li>
+                            <li>HYATT PLACE DFW DFW AIRPORT, TEXAS</li>
+                            <li>CAPITAL CENTER CARROLLTON, TEXAS</li>
+                            <li>FREEPORT INDUSTRIAL PARK IRVING, TX</li>
+                            <li>VALWOOD CARROLLTON/FARMER’S BRANCH, TEXAS</li>
+                            <li>ADVANCIAL TOWER DALLAS, TX</li>
+                            <li>COURTYARD HOUSTON SUGAR LAND SUGAR LAND/HOUSTON, TEXAS</li>
+                            <li>COURTYARD BY MARRIOTT HOUSTON SPRINGWOODS VILLAGE SPRING, TEXAS</li>
+                            <li>RESIDENCE INN HOUSTON SPRINGWOODS VILLAGE SPRING, TEXAS</li>
+                            <li>HILTON GRANITE PARK PLANO, TEXAS</li>
+                            <li>HYATT REGENCY LOST PINES RESORT & SPA AUSTIN/BASTROP, TX</li>
+                            <li>AC HOTEL IRVINE IRVINE, CALIFORNIA</li>
+                            <li>THE OLD NO. 77 NEW ORLEANS, LOUISIANA</li>
+                            <li>HUNT WORLDWIDE HEADQUARTERS DALLAS, TEXAS</li>
+                            <li>THE WESTIN KIERLAND RESORT & SPA SCOTTSDALE, ARIZONA</li>
+                            <li>HILTON PASADENA PASADENA, CALIFORNIA</li>
+                            <li>HOUSTON CITY PLACE AT MARRIOTT SPRING, TEXAS</li>
+                            <li>AC HOTEL SALT LAKE CITY DOWNTOWN SALT LAKE CITY, UTAH</li>
+                            <li>CLEARFORK OFFICE FORT WORTH, TEXAS – USA</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects under Canada -->
+                    <div class="country-projects">
+                        <h3>
+                            Germany
+                            <span class="arrow-icon" onclick="toggleProjects('germany-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="germany-projects" class="hidden-projects">
+                            <li>WESTEND GARDENS - Frankfurt am Main – Germany</li>
+                            <li>VILVIF - HafenCity, Hamburg – Germany</li>
+                            <li>KOTTENTOR - Bad-Godesberg, Bonn</li>
+                            <li>DAHME NORTH BANK| Wildau – Germany</li>
+                            <li>NEW BOCK BREWERY | Berlin-Kreuzberg</li>
+                            <li>LAKE | Storkow – Germany</li>
+                            <li>THE WILDBERGPLATZ | Hohen Neuendorf</li>
+                            <li>ROOTS HafenCity, Hamburg</li>
+                            <li>GO - Düsseldorf-Bilk</li>
+                            <li>Campus Tower HafenCity, Hamburg</li>
+                            <li>ON BOARD Baakenhafen HafenCity, Hamburg</li>
+                            <li>HeimatHafen HafenCity, Hamburg</li>
+                            <li>Husarenhof Marienthal Hamburg</li>
+                            <li>Quartierpark Hagenbeck Hamburg</li>
+                            <li>Kaiserwerther Strasse, Dusseldorf</li>
+                            <li>Othmarschen Park Hamburg</li>
+                            <li>WaldQuartier at OxPark Hamburg</li>
+                            <li>Orsoyer Strasse Dusseldorf</li>
+                            <li>Alsterufer Hamburg</li>
+                            <li>GoltsteinForum Cologne</li>
+                            <li>Grafenberger Allee Dusseldorf</li>
+                            <li>Gustav-Heinemann-Ufer Cologne</li>
+                            <li>Holsteinischer Kamp Hamburg</li>
+                            <li>Südstadtgärten Bonn</li>
+                            <li>Schmollerplatz Berlin</li>
+                            <li>Bloom Pergolenviertel Hamburg</li>
+                            <li>La Taille Vent Hamburg</li>
+                            <li>TRI - DAS ERSTE HOLZ-HYBRID-BÜROGEBÄUDE IN MÜNCHEN – Germany</li>
+                            <li>THE STACK INNOVATIVES HOLZ-HYBRID-BÜROGEBÄUDE IN DIREKTER NACHBARSCHAFT ZUM HAUPTBAHNHOF MÜNCHEN</li>
+                            <li>THE Q DIE ZUKUNFT EINER EHEMALIGEN INDUSTRIE-IKONE</li>
+                            <li>HERZOG MAX REDEVELOPMENT DES DENKMALGESCHÜTZTEN TRADITIONSHAUSES AM KARLSPLATZ (STACHUS)</li>
+                            <li>2BRX NEW DEVELOPMENT OF A COMMERCIAL AREA IN THE UP-AND-COMING SOUTH OF MUNICH</li>
+                            <li>HORIZONT² STUTTGART OFFICE REFURBISHMENT IN SYNERGY PARK</li>
+                            <li>PALAIS AN DER OPER LUXURY FOR THE HIGHEST DEMANDS</li>
+                            <li>FORUM STEGLITZ BERLIN REDEVELOPMENT OF A BERLIN SHOPPING CENTER ICON</li>
+                            <li>MOTORAMA MIXED-USE ENSEMBLE IN A CENTRAL CITY CENTRE LOCATION</li>
+                            <li>THERESIE NEIGHBOURHOOD DEVELOPMENT ON THE FORMER EXHIBITION GROUNDS</li>
+                            <li>SOUTH WINK NEIGHBOURHOOD CENTRE FOR THE NEW QUARTER AT SÜDPARK</li>
+                            <li>OLD TOWN PALACE REPRESENTATIVE OFFICE SPACE IN THE CITY CENTRE Munich</li>
+                            <li>TAKEOFF ENVIRON FLEXIBLE AND HARMONIOUS WORKING ENVIRONMENTS IN THE EAST OF MUNICH</li>
+                            <li>MEDIA FACTORY campus INNOVATIVE OFFICE CAMPUS CONSISTING OF OLD AND NEW BUILDINGS</li>
+                            <li>AVIVA MUNICH PIONEER IN THE FIELD OF WELL-BEING FOR OFFICE PROPERTIES</li>
+                            <li>AM SÜDPARK - Munich-Obers endling CONVERSION OF A FORMER COMMERCIAL AREA INTO A NEW RESIDENTIAL AREA</li>
+                            <li>OTTOBRUNN south DEVELOPMENT AREA IN THE SOUTH OF MUNICH</li>
+                            <li>AURON west MODERN OFFICE WORLDS IN THE WEST OF MUNICH</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Dubai
+                            <span class="arrow-icon" onclick="toggleProjects('dubai-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="dubai-projects" class="hidden-projects">
+                            <li>Marriott Hotel Al Jaddaf, Dubai</li>
+        <li>Marriott Bonvoy Dubai</li>
+        <li>JW Marriott Marquis Hotel Dubai</li>
+        <li>The Ritz-Carlton, Dubai</li>
+        <li>The Ritz-Carlton, Dubai International Financial Centre</li>
+        <li>Marriott Executive Apartments Dubai Creek</li>
+        <li>Grand Hyatt</li>
+        <li>DoubleTree by Hilton</li>
+        <li>Signature Villas Palm Jumeirah</li>
+        <li>Hills Grove, Dubai</li>
+        <li>Four Points by Sheraton Bur Dubai</li>
+        <li>Sapphire by the Gardens</li>
+        <li>Sheraton Grand Hotel, Dubai</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Saudi Arabia
+                            <span class="arrow-icon" onclick="toggleProjects('saudi-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="saudi-projects" class="hidden-projects">
+                            <li>The Ritz-Carlton, Riyadh</li>
+                            <li>Riyadh Airport Marriott Hotel</li>
+                            <li>Sheraton Dammam Hotel & Convention Centre</li>
+                            <li>Residence Inn by Marriott Dammam</li>
+                            <li>Courtyard by Marriott Riyadh Diplomatic Quarter</li>
+                            <li>Four Seasons Hotel Riyadh At Kingdom Center</li>
+                            <li>Alfardan Residence</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Bangladesh
+                            <span class="arrow-icon" onclick="toggleProjects('bangladesh-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="bangladesh-projects" class="hidden-projects">
+                            <li>Space Apartments</li>
+        <li>Le Méridien Dhaka</li>
+        <li>InterContinental Dhaka, an IHG Hotel</li>
+        <li>Pan Pacific Sonargaon Dhaka</li>
+        <li>Radisson Blu Water Garden Hotel, Dhaka</li>
+        <li>Crowne Plaza Dhaka Gulshan, an IHG Hotel</li>
+        <li>Renaissance Dhaka Gulshan Hotel</li>
+        <li>Best Western Plus Maple Leaf</li>
+                        </ul>
+                    </div>
+                   
+                    <!-- Add more country project lists as needed -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Projects List -->
+                <div class="horizontal-projects" id="projectContainer">
+                    <!-- Projects under USA -->
+                    <div class="country-projects">
+                        <h3>
+                            Singapore
+                            <span class="arrow-icon" onclick="toggleProjects('singapore-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="singapore-projects" class="hidden-projects">
+                            <li>Daintree Residence, Upper Bukit Timah</li>
+                            <li>The Ritz-Carlton, Millenia Singapore</li>
+                            <li>Conrad Centennial Singapore</li>
+                            <li>PARKROYAL COLLECTION Marina Bay</li>
+                            <li>Carlton Hotel Singapore</li>
+                            <li>Pan Pacific Singapore</li>
+                            <li>IOI Central Boulevard Towers</li>
+                            <li>Marina Bay Marina View</li>
+                            <li>Senadi Hills</li>
+                            <li>Aspira Square</li>
+                            <li>Horizon Hills</li>
+                            <li>Emerald Bay</li>
+                            <li>The Maris</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects under Canada -->
+                    <div class="country-projects">
+                        <h3>
+                            Malaysia
+                            <span class="arrow-icon" onclick="toggleProjects('malaysia-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="malaysia-projects" class="hidden-projects">
+                            <li>The Residences at The St. Regis Kuala Lumpur</li>
+        <li>St Mary Residences</li>
+        <li>Mio Spring, Gamuda Cove</li>
+        <li>Mansion18</li>
+        <li>High Park Suites, Petaling Jaya</li>
+        <li>D’Suites condominium</li>
+        <li>Horizon Square</li>
+        <li>Eco Park, Shah Alam</li>
+        <li>Horizon Mall</li>
+        <li>Daffodil Residency</li>
+        <li>Aspira Lake Homes</li>
+        <li>Aspira Park Homes</li>
+        <li>Aspira Gardens</li>
+        <li>Mall of Medini</li>
+        <li>Wild Coast Tented Lodge - Relais & Chateaux</li>
+        <li>Majestic Residence Sales Gallery</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Sri Lanka
+                            <span class="arrow-icon" onclick="toggleProjects('srilanka-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="srilanka-projects" class="hidden-projects">
+                            <li>Shangri-La Colombo</li>
+        <li>Colombo City Centre Mall and Residences</li>
+        <li>Cinnamon Life Integrated Resort</li>
+        <li>Altair - Colombo Luxury Apartments</li>
+        <li>The Residences at One Galle Face</li>
+        <li>Havelock City: Luxury Apartments</li>
+        <li>Clearpoint Residencies</li>
+        <li>NSBM Green University Town</li>
+        <li>Galagedara-Mawathagama Water Supply Project</li>
+        <li>Faculty Of Technology, University Of Colombo</li>
+        <li>Construction Of Pallekele International Cricket Stadium</li>
+        <li>Granbell Hotel Colombo</li>
+        <li>Marino Beach</li>
+        <li>The Kingsbury Colombo</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Maldives
+                            <span class="arrow-icon" onclick="toggleProjects('srilanka-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="srilanka-projects" class="hidden-projects">
+                            <li>The Ritz-Carlton Maldives, Fari Islands</li>
+                            <li>The St. Regis Maldives Vommuli Resort</li>
+                            <li>Anantara Kihavah Maldives Villas</li>
+                            <li>Construction Of Randheli Maldives</li>
+                            <li>Waldorf Astoria Maldives Ithaafushi</li>
+                            <li>Park Hyatt Maldives Hadahaa</li>
+                            <li>Amin Avenue Oak</li>
+                            <li>Platinum Residences</li>
+                            <li>Miveshi Residence</li>
+                            <li>The Waterfall Villas</li>
+                        </ul>
+                    </div>
+                  
+                    <!-- Add more country project lists as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Worked On End -->
+<!-- JavaScript to toggle project visibility -->
+<script>
+   function toggleProjects(id) {
+        var projects = document.getElementById(id);
+        projects.classList.toggle('hidden-projects');
+    }
+</script>
 
 
         <!-- Gallery img Start-->
@@ -189,11 +538,7 @@
                               <a href="#"><i class="fas fa-globe"></i></a>
                               <a href="#"><i class="fab fa-behance"></i></a>
                           </div>
-                          <div class="footer-pera">
-                               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                          </div>
+                         
                        </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5">

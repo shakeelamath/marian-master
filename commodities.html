@@ -36,6 +36,64 @@
             .centered-content ul {
                 margin: 0;
             }
+            /* Add these styles to your existing stylesheet or create a new one */
+
+.projects-worked-on-area {
+    background-color: #f5f5f5; /* Set the background color as needed */
+    padding: 50px 0; /* Adjust the padding as needed */
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #333; /* Set the title color as needed */
+    margin-bottom: 30px;
+}
+.hidden-projects {
+        display: none;
+        transition: max-height 0.3s ease-out; /* Add transition effect */
+        overflow: hidden;
+    }
+
+    .horizontal-projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+
+    .country-projects {
+        text-align: center;
+        box-sizing: border-box;
+        margin-bottom: 10px; /* Adjust margin as needed */
+    }
+
+    .country-projects h3 {
+        font-size: 24px;
+        color: #555; /* Set the country title color as needed */
+    }
+
+    .country-projects ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .country-projects li {
+        font-size: 18px;
+        color: #777; /* Set the project item color as needed */
+        margin-bottom: 8px;
+    }
+
+    .arrow-icon {
+        cursor: pointer;
+    }
+
+    /* Media query for smaller screens */
+    @media screen and (max-width: 767px) {
+        .horizontal-projects {
+            flex-direction: column;
+            align-items: center; /* Stack items vertically on smaller screens */
+        }
+    }
         </style>
    </head>
 
@@ -72,20 +130,16 @@
                                 <nav>
                                     <ul id="navigation">                                                                                                                                     
                                         <li><a href="index.html">Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="services.html">Service</a></li>
-                                        <li><a href="commodities.html">Commodities</a></li>
-                                        <li><a href="construction.html">Construction</a></li>
-                                        <li><a href="blog.html">Blog</a>
+                                     
+                                        
+                                        <li><a href="#">Services</a>
                                             <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="single-blog.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="rooms.html">Rooms</a>
-                                                <li><a href="elements.html">Element</a></li>
+                                                <li><a href="properties.html">Properties</a></li>
+                                                <li><a href="commodities.html">Commodities</a></li>
+                                                <li><a href="construction.html">Construction</a></li>
+                                                <li><a href="marine.html">Marine</a></li>
+                                                <li><a href="petroleum.html">Petroleum</a></li>
+                                                <li><a href="finance.html">Finance</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
@@ -182,6 +236,257 @@
             </div>
         </section>
         <!-- Make customer End-->
+         <!-- Projects Worked On Start -->
+<section class="projects-worked-on-area customar-padding fix">
+    <div class="container-fluid p-0">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title text-center mb-70">
+                    <h2>Clients We Supply Construction Materials to</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Projects List -->
+                <div class="horizontal-projects" id="projectContainer">
+                    <!-- Projects under USA -->
+                    <div class="country-projects">
+                        <h3>
+                            USA
+                            <span class="arrow-icon" onclick="toggleProjects('usa-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="usa-projects" class="hidden-projects">
+                            <li>Turner Construction</li>
+                            <li>Bechtel Corporation</li>
+                            <li>DPR Construction</li>
+                            <li>Balfour Beatty Construction</li>
+                            <li>Kiewit Corporation</li>
+                            <li>Alston Construction</li>
+                            <li>Jacobs Engineering Group</li>
+                            <li>Gilbane Building Company</li>
+                            <li>Billingsley Company</li>
+                            <li>EMCOR Group, Inc.</li>
+                            <li>The Walsh Group</li>
+                            <li>Clayco</li>
+                            <li>STO Building Group</li>
+                            <li>Hillwood Urban</li>
+                            <li>Tutor Perini Corporation</li>
+                            <li>Suffolk Construction</li>
+                            <li>Brasfield &amp; Gorrie</li>
+                            <li>AECOM Tishman</li>
+                            <li>Turner Construction Company</li>
+                            <li>Pavarini McGovern</li>
+                            <li>Skanska USA</li>
+                            <li>Lendlease</li>
+                            <li>Gilbane Building Company</li>
+                            <li>J.T. Magen &amp; Company</li>
+                            <li>China Construction America</li>
+                            <li>Hunter Roberts Construction Group</li>
+                            <li>The Walsh Group</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects under Canada -->
+                    <div class="country-projects">
+                        <h3>
+                            Germany
+                            <span class="arrow-icon" onclick="toggleProjects('germany-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="germany-projects" class="hidden-projects">
+                            <li>The Goldbeck GmbH</li>
+        <li>HOCHTIEF AG</li>
+        <li>Max Bögl construction</li>
+        <li>Eiffage Construction</li>
+        <li>STRABAG SE</li>
+        <li>Züblin AG</li>
+        <li>Leonhard Weiss</li>
+        <li>Bilfinger SE</li>
+        <li>Arup construction</li>
+        <li>Eurovia construction</li>
+        <li>Zeppelin GmbH</li>
+        <li>Helmut Mauell GmbH</li>
+        <li>Hilti Corporation</li>
+        <li>Hilti Group</li>
+        <li>IKN GmbH</li>
+        <li>KAEFER Isoliertechnik GmbH & Co. KG</li>
+        <li>Philipp Holzmann AG</li>
+        <li>Royal BAM Group</li>
+        <li>TK Essen Elevator GmbH</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Dubai
+                            <span class="arrow-icon" onclick="toggleProjects('dubai-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="dubai-projects" class="hidden-projects">
+                            <li>Al Naboodah Construction Group LLC</li>
+                            <li>Arabtec Construction LLC</li>
+                            <li>FUJAIRAH NATIONAL CONSTRUCTION CO LLC</li>
+                            <li>DAMAC PROPERTIES CO. LLC</li>
+                            <li>Emaar Properties</li>
+                            <li>Eagle Hills</li>
+                            <li>Rosewood Hotel</li>
+                            <li>Al Meena Tower - Residential and commercial tower complex</li>
+                            <li>Abu Dhabi Trade Centre</li>
+                            <li>World Trade Centre Courtyard by Marriot</li>
+                            <li>Skyline Etihad Towers</li>
+                            <li>Taweelah A2 Desalination Plant Abu Dhabi</li>
+                            <li>Shuweihat S1 Independent Power and Desalination Plant Abu Dhabi</li>
+                            <li>Liwa Strategic Water Storage and Recovery System - Abu Dhabi</li>
+                            <li>Grand Hyatt Emirates Pearl</li>
+                            <li>Fujairah Independent Water and Power Plant</li>
+                            <li>Boulevard Point premium residential 63-storey tower Downtown</li>
+                            <li>Mashreq Bank Headquarters Tower - Sheikh Zayed Road</li>
+                            <li>Clemenceau Medical Centre - Dubai Healthcare City</li>
+                            <li>Volante is a 35-floor residential tower</li>
+                            <li>Centara Resort</li>
+                            <li>Hotel Riu</li>
+                            <li>Bulgari Ocean Mansions</li>
+                            <li>Avani Ibn Battuta</li>
+                            <li>Al Naser Stadium Extension</li>
+                            <li>The Acres</li>
+                            <!-- Add more projects as needed -->
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Saudi Arabia
+                            <span class="arrow-icon" onclick="toggleProjects('saudi-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="saudi-projects" class="hidden-projects">
+                            <li>Saudi Binladin Group</li>
+        <li>Al Kifah Contracting Co.</li>
+        <li>Bechtel. CB&I LLC</li>
+        <li>Contracting & Construction Enterprises Co. Ltd</li>
+        <li>Saudi Constructioneers Co. Ltd</li>
+        <li>SIBCO Mega plant</li>
+        <li>BOPP Factory Line-2 Extension</li>
+        <li>Balkis Ceramic Factory</li>
+        <li>Workshops for Saudi Railways Organization</li>
+        <li>ARAMCO</li>
+        <li>AACC Aircraft Facility at King Abdul Aziz International Airport</li>
+        <li>SAPTCO New Headquarter</li>
+        <li>Civil defence heliports & utilities</li>
+        <li>Maaden International Industrial Co. Ltd.</li>
+        <li>Jeddah Airport (KSA)</li>
+        <li>Factory Building for MTQ Oilfield Services</li>
+                        </ul>
+                    </div>
+                   
+                    <!-- Add more country project lists as needed -->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <!-- Projects List -->
+                <div class="horizontal-projects" id="projectContainer">
+                    <!-- Projects under USA -->
+                    <div class="country-projects">
+                        <h3>
+                            Malaysia
+                            <span class="arrow-icon" onclick="toggleProjects('malaysia-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="malaysia-projects" class="hidden-projects">
+                            <li>Gamuda Berhad Engineering</li>
+        <li>Gamuda Berhad Construction</li>
+        <li>UEM Group Berhad</li>
+        <li>IJM Corporation Berhad</li>
+        <li>YTL Corporation Berhad</li>
+        <li>WCT Holdings Berhad</li>
+        <li>Eversendai Corporation Berhad</li>
+        <li>TH Heavy Engineering Berhad</li>
+        <li>Warehouse for First Malaysian Factory</li>
+        <li>Waterfront Development, Marri</li>
+        <li>Showroom and Warehouse for Kavalan & Sons</li>
+        <li>Factory Extension for BRC Weld Mesh</li>
+        <li>Warehouse for Ashrafs BGDC</li>
+        <li>GIIC Workshop & Ablution and Offices</li>
+        <li>Material Storage Yard</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects under Canada -->
+                    <div class="country-projects">
+                        <h3>
+                            Kuwait
+                            <span class="arrow-icon" onclick="toggleProjects('kuwait-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="kuwait-projects" class="hidden-projects">
+                            <li>Kharafi National</li>
+                            <li>Alghanim International</li>
+                            <li>Hilti Corporation</li>
+                            <li>MAG Construction</li>
+                            <li>MNA International Group</li>
+                            <li>Pre-treatment Plant Building & Catwalks (Wastewater Treatment Plant)</li>
+                            <li>LPG Industrial Building</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Qatar
+                            <span class="arrow-icon" onclick="toggleProjects('qatar-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="qatar-projects" class="hidden-projects">
+                            <li>Field support Mechanical workshop & Control</li>
+                            <li>QAPCO Logistics Terminal Expansion Project</li>
+                            <li>Offsite Warehouse & Distribution Centre for Qatar Foundation</li>
+                            <li>Gulf Mall</li>
+                            <li>Accommodation (G+2+S.C) building & store</li>
+                            <li>Qatalum Project Anode Service Plant</li>
+                            <li>Sulphur Tank Project – Roof Access</li>
+                            <li>Qatalum Power Plant – Maintenance Platforms</li>
+                            <li>Karam Gas Development Project</li>
+                        </ul>
+                    </div>
+                    <div class="country-projects">
+                        <h3>
+                            Sri Lanka
+                            <span class="arrow-icon" onclick="toggleProjects('srilanka-projects', event)">&#9660;</span>
+                        </h3>
+                        <ul id="srilanka-projects" class="hidden-projects">
+                            <li>Access Engineering PLC</li>
+                            <li>Maga Engineering (Private) Limited</li>
+                            <li>L H Piyasena & Co (Pvt) Ltd</li>
+                            <li>Walker Sons & Co Engineers Pvt Ltd</li>
+                            <li>Nuwani Construction (Pvt)Ltd.</li>
+                            <li>Nawaloka Construction Company (pvt) Limited</li>
+                            <li>Sierra Construction LTD.</li>
+                            <li>Edward and Christie</li>
+                            <li>ELS Lanka</li>
+                            <li>Sanken Overseas Pvt. Ltd.</li>
+                            <li>Tudawe Brothers</li>
+                            <li>Lanka Motor Showroom & Workshop</li>
+                            <li>Bottling Plant for Varun Beverages</li>
+                            <li>Biscuits Factory & Warehouse Munchee</li>
+                            <li>Biscuits Factory & Warehouse Maliban</li>
+                            <li>Ball Mill with Bag House, Seethawka Industrial Park</li>
+                            <li>Part A – Structural Steel Works for PROJECT MORPH in Horana</li>
+                            <li>Part A – Structural Steel Work for PROJECT MORPH (Edible Oil Building) in Horana</li>
+                            <li>Warehouse Complex for Brandex</li>
+                            <li>Coca Cola warehouse & Factory</li>
+                            <li>Warehouses (Manufacturing Unit) for Garment Factory</li>
+                            <li>Ammonia Fertilizer Warehouse</li>
+                            <li>Aluminium Anodizing Equipment Building</li>
+                        </ul>
+                    </div>
+                  
+                    <!-- Add more country project lists as needed -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Projects Worked On End -->
+<!-- JavaScript to toggle project visibility -->
+<script>
+   function toggleProjects(id) {
+        var projects = document.getElementById(id);
+        projects.classList.toggle('hidden-projects');
+    }
+</script>
 
 
         <!-- Gallery img Start-->
@@ -226,11 +531,7 @@
                               <a href="#"><i class="fas fa-globe"></i></a>
                               <a href="#"><i class="fab fa-behance"></i></a>
                           </div>
-                          <div class="footer-pera">
-                               <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                          </div>
+                         
                        </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5">
