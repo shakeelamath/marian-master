@@ -297,7 +297,7 @@ label {
   white-space: nowrap; }
 
 .btn:hover {
-  background: #f1b233;
+  background: #000080;
   color: #fff; }
 
 .border-btn {
@@ -1966,7 +1966,7 @@ label {
   margin-bottom: 84px; }
 
 .slider-area .dot-style .slick-active button {
-  background: #fff;
+  background: transparent;
   height: 10px;
   width: 10px; }
 
