@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Hotel</title>
+        <title>Properties</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -62,9 +62,10 @@
     }
 
     .country-projects {
-        text-align: center;
+        text-align: left;
         box-sizing: border-box;
         margin-bottom: 10px; /* Adjust margin as needed */
+        padding: 20px;
     }
 
     .country-projects h3 {
@@ -75,21 +76,35 @@
     }
 
     .country-projects ul {
-        list-style: none;
-        padding: 0;
-        margin: 10px 0;
-    }
+    list-style-type: circle; /* Use 'circle' as the list-style-type */
+    padding: 10px;
+    margin: 10px 0;
+}
+.country-projects li::before {
+    content: "\2022"; /* Unicode character for a bullet point */
+    color: #333; /* Adjust the color if needed */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+  
 
-    .country-projects li {
-        font-size: 18px;
-        color: #777; /* Set the project item color as needed */
-        margin-bottom: 8px;
-    }
+    .country-projects h3 {
+    padding: 10px;
+    font-size: 24px;
+    color: #555;
+    width: 200px; /* Set a fixed width that accommodates the longest country name */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+}
 
-    .arrow-icon {
-        cursor: pointer;
-    }
+.arrow-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Add a transition for smooth rotation */
+}
 
+.arrow-icon.up {
+    transform: rotate(180deg); /* Rotate the arrow icon 180 degrees for the up position */
+}
     /* Media query for smaller screens */
     @media screen and (max-width: 767px) {
         .horizontal-projects {
@@ -229,48 +244,49 @@
                     <div class="country-projects">
                         <h3>
                             USA
-                            <span class="arrow-icon" onclick="toggleProjects('usa-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('usa-projects', event)">&#8628</span>
                         </h3>
                         <ul id="usa-projects" class="hidden-projects">
-                            <li>The Standard Downtown Shreveport Lofts – USA</li>
-                            <li>The Reserve at Shoe Creek</li>
-                            <li>Shoppes at Belle mead</li>
-                            <li>HILTON DALLAS/PARK CITIES DALLAS</li>
-                            <li>HYATT REGENCY HILL COUNTRY RESORT & SPA SAN ANTONIO, TEXAS</li>
-                            <li>HYATT REGENCY DALLAS & REUNION TOWER DALLAS, TEXAS</li>
-                            <li>MOUNTAIN SHADOWS, PARADISE VALLEY, ARIZONA</li>
-                            <li>HILTON GARDEN INN WASHINGTON DC DOWNTOWN, WASHINGTON DC</li>
-                            <li>HILTON LOS ANGELES CULVER CITY, CULVER CITY, CA</li>
-                            <li>GRAND HYATT DFW, DALLAS/FORT WORTH INTERNATIONAL AIRPORT, TX</li>
-                            <li>HOTEL COLEE, ATLANTA, GEORGIA</li>
-                            <li>ENTRADA, CULVER CITY, CA</li>
-                            <li>HYATT PLACE SUGAR LAND, SUGAR LAND, TX</li>
-                            <li>HYATT REGENCY TYSONS CORNER CENTER, TYSONS, VIRGINIA</li>
-                            <li>U.S. BANK TOWER OBSERVATION DECK, LOS ANGELES, CALIFORNIA</li>
-                            <li>12099 LUNA ROAD, LUNA ROAD FARMERS BRANCH, TX 75234</li>
-                            <li>29 JAY STREET BRIDGE PARK, BROOKLYN’S HISTORIC DUMBO NEIGHBORHOOD, EAST TO BROOKLYN</li>
-                            <li>131 Duane Street, Ribeca South Historic District, New York Residence Inc. Square Foot 37,000 SF, Jonathan Schloss Architect</li>
-                            <li>TOWNEPLACE SUITES DES MOINES WEST-JORDAN CREEK WEST DES MOINES, IA</li>
-                            <li>TOWNEPLACE SUITES FORT WALTON BEACH-EGLIN AFB FORT WALTON BEACH-EGLIN AFB</li>
-                            <li>KIERLAND COMMON PHOENIX/SCOTTSDALE, AZ</li>
-                            <li>HYATT PLACE DFW DFW AIRPORT, TEXAS</li>
-                            <li>CAPITAL CENTER CARROLLTON, TEXAS</li>
-                            <li>FREEPORT INDUSTRIAL PARK IRVING, TX</li>
-                            <li>VALWOOD CARROLLTON/FARMER’S BRANCH, TEXAS</li>
-                            <li>ADVANCIAL TOWER DALLAS, TX</li>
-                            <li>COURTYARD HOUSTON SUGAR LAND SUGAR LAND/HOUSTON, TEXAS</li>
-                            <li>COURTYARD BY MARRIOTT HOUSTON SPRINGWOODS VILLAGE SPRING, TEXAS</li>
-                            <li>RESIDENCE INN HOUSTON SPRINGWOODS VILLAGE SPRING, TEXAS</li>
-                            <li>HILTON GRANITE PARK PLANO, TEXAS</li>
-                            <li>HYATT REGENCY LOST PINES RESORT & SPA AUSTIN/BASTROP, TX</li>
-                            <li>AC HOTEL IRVINE IRVINE, CALIFORNIA</li>
-                            <li>THE OLD NO. 77 NEW ORLEANS, LOUISIANA</li>
-                            <li>HUNT WORLDWIDE HEADQUARTERS DALLAS, TEXAS</li>
-                            <li>THE WESTIN KIERLAND RESORT & SPA SCOTTSDALE, ARIZONA</li>
-                            <li>HILTON PASADENA PASADENA, CALIFORNIA</li>
-                            <li>HOUSTON CITY PLACE AT MARRIOTT SPRING, TEXAS</li>
-                            <li>AC HOTEL SALT LAKE CITY DOWNTOWN SALT LAKE CITY, UTAH</li>
-                            <li>CLEARFORK OFFICE FORT WORTH, TEXAS – USA</li>
+                            <li><span>The Standard Downtown Shreveport Lofts – </span><strong>USA</strong></li>
+<li><span>The Reserve at Shoe Creek</span></li>
+<li><span>Shoppes at Belle Mead</span></li>
+<li><span>Hilton Dallas/Park Cities Dallas</span></li>
+<li><span>Hyatt Regency Hill Country Resort & Spa San Antonio, </span><strong>Texas</strong></li>
+<li><span>Hyatt Regency Dallas & Reunion Tower Dallas, </span><strong>Texas</strong></li>
+<li><span>Mountain Shadows, Paradise Valley, </span><strong>Arizona</strong></li>
+<li><span>Hilton Garden Inn Washington DC Downtown, Washington DC</span></li>
+<li><span>Hilton Los Angeles Culver City, Culver City, </span><strong>CA</strong></li>
+<li><span>Grand Hyatt DFW, Dallas/Fort Worth International Airport, </span><strong>TX</strong></li>
+<li><span>Hotel Colee, </span><strong>Atlanta, Georgia</strong></li>
+<li><span>Entrada, Culver City, </span><strong>CA</strong></li>
+<li><span>Hyatt Place Sugar Land, </span><strong>Sugar Land, TX</strong></li>
+<li><span>Hyatt Regency Tysons Corner Center, Tysons, </span><strong>Virginia</strong></li>
+<li><span>U.S. Bank Tower Observation Deck, Los Angeles, </span><strong>California</strong></li>
+<li><span>12099 Luna Road, Luna Road Farmers Branch, </span><strong>TX 75234</strong></li>
+<li><span>29 Jay Street Bridge Park, Brooklyn’s Historic DUMBO Neighborhood, East to </span><strong>Brooklyn</strong></li>
+<li><span>131 Duane Street, Tribeca South Historic District, New York Residence Inc. Square Foot 37,000 SF, Jonathan Schloss Architect</span></li>
+<li><span>TownePlace Suites Des Moines West-Jordan Creek West Des Moines, </span><strong>IA</strong></li>
+<li><span>TownePlace Suites Fort Walton Beach-Eglin AFB Fort Walton Beach-Eglin AFB</span></li>
+<li><span>Kierland Common </span><strong>Phoenix/Scottsdale, AZ</strong></li>
+<li><span>Hyatt Place DFW </span><strong>DFW Airport, Texas</strong></li>
+<li><span>Capital Center Carrollton, </span><strong>Texas</strong></li>
+<li><span>Freeport Industrial Park </span><strong>Irving, TX</strong></li>
+<li><span>Valwood Carrollton/Farmer’s Branch, </span><strong>Texas</strong></li>
+<li><span>Advancial Tower </span><strong>Dallas, TX</strong></li>
+<li><span>Courtyard Houston Sugar Land </span><strong>Sugar Land/Houston, Texas</strong></li>
+<li><span>Courtyard by Marriott Houston Springwoods Village </span><strong>Spring, Texas</strong></li>
+<li><span>Residence Inn Houston Springwoods Village </span><strong>Spring, Texas</strong></li>
+<li><span>Hilton Granite Park </span><strong>Plano, Texas</strong></li>
+<li><span>Hyatt Regency Lost Pines Resort & Spa </span><strong>Austin/Bastrop, TX</strong></li>
+<li><span>AC Hotel </span><strong>Irvine, California</strong></li>
+<li><span>The Old No. 77 </span><strong>New Orleans, Louisiana</strong></li>
+<li><span>Hunt Worldwide Headquarters </span><strong>Dallas, Texas</strong></li>
+<li><span>The Westin Kierland Resort & Spa </span><strong>Scottsdale, Arizona</strong></li>
+<li><span>Hilton </span><strong>Pasadena, California</strong></li>
+<li><span>Houston City Place at Marriott </span><strong>Spring, Texas</strong></li>
+<li><span>AC Hotel Salt Lake City Downtown </span><strong>Salt Lake City, Utah</strong></li>
+<li><span>Clearfork Office </span><strong>Fort Worth, Texas – USA</strong></li>
+
                         </ul>
                     </div>
 
@@ -278,21 +294,21 @@
                     <div class="country-projects">
                         <h3>
                             Germany
-                            <span class="arrow-icon" onclick="toggleProjects('germany-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('germany-projects', event)">&#8628;</span>
                         </h3>
                         <ul id="germany-projects" class="hidden-projects">
-                            <li>WESTEND GARDENS - Frankfurt am Main – Germany</li>
-                            <li>VILVIF - HafenCity, Hamburg – Germany</li>
-                            <li>KOTTENTOR - Bad-Godesberg, Bonn</li>
-                            <li>DAHME NORTH BANK| Wildau – Germany</li>
-                            <li>NEW BOCK BREWERY | Berlin-Kreuzberg</li>
-                            <li>LAKE | Storkow – Germany</li>
-                            <li>THE WILDBERGPLATZ | Hohen Neuendorf</li>
-                            <li>ROOTS HafenCity, Hamburg</li>
-                            <li>GO - Düsseldorf-Bilk</li>
+                            <li>Westend Gardens - Frankfurt am Main – Germany</li>
+                            <li>Vilvif - HafenCity, Hamburg – Germany</li>
+                            <li>Kottentor - Bad-Godesberg, Bonn</li>
+                            <li>Dahme North Bank| Wildau – Germany</li>
+                            <li>New Bock Brewery | Berlin-Kreuzberg</li>
+                            <li>Lake | Storkow – Germany</li>
+                            <li>The Wildbergplatz | Hohen Neuendorf</li>
+                            <li>Roots HafenCity, Hamburg</li>
+                            <li>Go - Düsseldorf-Bilk</li>
                             <li>Campus Tower HafenCity, Hamburg</li>
-                            <li>ON BOARD Baakenhafen HafenCity, Hamburg</li>
-                            <li>HeimatHafen HafenCity, Hamburg</li>
+                            <li>On Board Baakenhafen HafenCity, Hamburg</li>
+                            <li>Heimathafen HafenCity, Hamburg</li>
                             <li>Husarenhof Marienthal Hamburg</li>
                             <li>Quartierpark Hagenbeck Hamburg</li>
                             <li>Kaiserwerther Strasse, Dusseldorf</li>
@@ -308,30 +324,31 @@
                             <li>Schmollerplatz Berlin</li>
                             <li>Bloom Pergolenviertel Hamburg</li>
                             <li>La Taille Vent Hamburg</li>
-                            <li>TRI - DAS ERSTE HOLZ-HYBRID-BÜROGEBÄUDE IN MÜNCHEN – Germany</li>
-                            <li>THE STACK INNOVATIVES HOLZ-HYBRID-BÜROGEBÄUDE IN DIREKTER NACHBARSCHAFT ZUM HAUPTBAHNHOF MÜNCHEN</li>
-                            <li>THE Q DIE ZUKUNFT EINER EHEMALIGEN INDUSTRIE-IKONE</li>
-                            <li>HERZOG MAX REDEVELOPMENT DES DENKMALGESCHÜTZTEN TRADITIONSHAUSES AM KARLSPLATZ (STACHUS)</li>
-                            <li>2BRX NEW DEVELOPMENT OF A COMMERCIAL AREA IN THE UP-AND-COMING SOUTH OF MUNICH</li>
-                            <li>HORIZONT² STUTTGART OFFICE REFURBISHMENT IN SYNERGY PARK</li>
-                            <li>PALAIS AN DER OPER LUXURY FOR THE HIGHEST DEMANDS</li>
-                            <li>FORUM STEGLITZ BERLIN REDEVELOPMENT OF A BERLIN SHOPPING CENTER ICON</li>
-                            <li>MOTORAMA MIXED-USE ENSEMBLE IN A CENTRAL CITY CENTRE LOCATION</li>
-                            <li>THERESIE NEIGHBOURHOOD DEVELOPMENT ON THE FORMER EXHIBITION GROUNDS</li>
-                            <li>SOUTH WINK NEIGHBOURHOOD CENTRE FOR THE NEW QUARTER AT SÜDPARK</li>
-                            <li>OLD TOWN PALACE REPRESENTATIVE OFFICE SPACE IN THE CITY CENTRE Munich</li>
-                            <li>TAKEOFF ENVIRON FLEXIBLE AND HARMONIOUS WORKING ENVIRONMENTS IN THE EAST OF MUNICH</li>
-                            <li>MEDIA FACTORY campus INNOVATIVE OFFICE CAMPUS CONSISTING OF OLD AND NEW BUILDINGS</li>
-                            <li>AVIVA MUNICH PIONEER IN THE FIELD OF WELL-BEING FOR OFFICE PROPERTIES</li>
-                            <li>AM SÜDPARK - Munich-Obers endling CONVERSION OF A FORMER COMMERCIAL AREA INTO A NEW RESIDENTIAL AREA</li>
-                            <li>OTTOBRUNN south DEVELOPMENT AREA IN THE SOUTH OF MUNICH</li>
-                            <li>AURON west MODERN OFFICE WORLDS IN THE WEST OF MUNICH</li>
+                            <li>Tri - Das erste Holz-Hybrid-Bürogebäude in München – Germany</li>
+                            <li>The Stack Innovatives Holz-Hybrid-Bürogebäude in direkter Nachbarschaft zum Hauptbahnhof München</li>
+                            <li>The Q Die Zukunft einer ehemaligen Industrie-Ikone</li>
+                            <li>Herzog Max Redevelopment des denkmalgeschützten Traditionshauses am Karlsplatz (Stachus)</li>
+                            <li>2brx New Development of a Commercial Area in the Up-and-Coming South of Munich</li>
+                            <li>Horizont² Stuttgart Office Refurbishment in Synergy Park</li>
+                            <li>Palais an der Oper Luxury for the Highest Demands</li>
+                            <li>Forum Steglitz Berlin Redevelopment of a Berlin Shopping Center Icon</li>
+                            <li>Motorama Mixed-Use Ensemble in a Central City Centre Location</li>
+                            <li>Theresie Neighbourhood Development on the Former Exhibition Grounds</li>
+                            <li>South Wink Neighbourhood Centre for the New Quarter at Südpark</li>
+                            <li>Old Town Palace Representative Office Space in the City Centre Munich</li>
+                            <li>Takeoff Environ Flexible and Harmonious Working Environments in the East of Munich</li>
+                            <li>Media Factory Campus Innovative Office Campus Consisting of Old and New Buildings</li>
+                            <li>Aviva Munich Pioneer in the Field of Well-Being for Office Properties</li>
+                            <li>Am Südpark - Munich-Obersendling Conversion of a Former Commercial Area into a New Residential Area</li>
+                            <li>Ottobrunn South Development Area in the South of Munich</li>
+                            <li>Auron West Modern Office Worlds in the West of Munich</li>
+                            
                         </ul>
                     </div>
                     <div class="country-projects">
                         <h3>
                             Dubai
-                            <span class="arrow-icon" onclick="toggleProjects('dubai-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('dubai-projects', event)">&#8628;</span>
                         </h3>
                         <ul id="dubai-projects" class="hidden-projects">
                             <li>Marriott Hotel Al Jaddaf, Dubai</li>
@@ -364,7 +381,7 @@
                     <div class="country-projects">
                         <h3>
                             Saudi Arabia
-                            <span class="arrow-icon" onclick="toggleProjects('saudi-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('saudi-projects', event)">&#8628;</span>
                         </h3>
                         <ul id="saudi-projects" class="hidden-projects">
                             <li>The Ritz-Carlton, Riyadh</li>
@@ -379,7 +396,7 @@
                     <div class="country-projects">
                         <h3>
                             Bangladesh
-                            <span class="arrow-icon" onclick="toggleProjects('bangladesh-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('bangladesh-projects', event)">&#8628;</span>
                         </h3>
                         <ul id="bangladesh-projects" class="hidden-projects">
                             <li>Space Apartments</li>
@@ -396,7 +413,7 @@
                     <div class="country-projects">
                         <h3>
                             Singapore
-                            <span class="arrow-icon" onclick="toggleProjects('singapore-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('singapore-projects', event)">&#8628;</span>
                         </h3>
                         <ul id="singapore-projects" class="hidden-projects">
                             <li>Daintree Residence, Upper Bukit Timah</li>
@@ -430,7 +447,7 @@
                     <div class="country-projects">
                         <h3>
                             Malaysia
-                            <span class="arrow-icon" onclick="toggleProjects('malaysia-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('malaysia-projects', event)">&#8628;</span>
                         </h3>
                         <ul id="malaysia-projects" class="hidden-projects">
                             <li>The Residences at The St. Regis Kuala Lumpur</li>
@@ -454,7 +471,7 @@
                     <div class="country-projects">
                         <h3>
                             Sri Lanka
-                            <span class="arrow-icon" onclick="toggleProjects('srilanka-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('srilanka-projects', event)">&#8628;</span>
                         </h3>
                         <ul id="srilanka-projects" class="hidden-projects">
                             <li>Shangri-La Colombo</li>
@@ -476,9 +493,9 @@
                     <div class="country-projects">
                         <h3>
                             Maldives
-                            <span class="arrow-icon" onclick="toggleProjects('srilanka-projects', event)">&#9660;</span>
+                            <span class="arrow-icon" onclick="toggleProjects('maldives-projects', event)">&#8628;</span>
                         </h3>
-                        <ul id="srilanka-projects" class="hidden-projects">
+                        <ul id="maldives-projects" class="hidden-projects">
                             <li>The Ritz-Carlton Maldives, Fari Islands</li>
                             <li>The St. Regis Maldives Vommuli Resort</li>
                             <li>Anantara Kihavah Maldives Villas</li>
@@ -501,11 +518,17 @@
 <!-- Projects Worked On End -->
 <!-- JavaScript to toggle project visibility -->
 <script>
-   function toggleProjects(id) {
-        var projects = document.getElementById(id);
-        projects.classList.toggle('hidden-projects');
-    }
-</script>
+    function toggleProjects(id, icon) {
+         var projects = document.getElementById(id);
+         var arrowIcon = document.getElementById(icon);
+ 
+         // Toggle the 'hidden-projects' class on the projects element
+         projects.classList.toggle('hidden-projects');
+ 
+         // Toggle the 'up' class on the arrow icon
+         arrowIcon.classList.toggle('up');
+     }
+ </script>
 
 
         <!-- Gallery img Start-->
@@ -542,74 +565,32 @@
                        <div class="single-footer-caption mb-30">
                           <!-- logo -->
                           <div class="footer-logo">
-                            <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                            <a href="index.html"><img src="assets/img/logo/logo.png" alt="" style="height: 50px;"></a>
                           </div>
-                          <div class="footer-social footer-social2">
-                              <a href="#"><i class="fab fa-facebook-f"></i></a>
-                              <a href="#"><i class="fab fa-twitter"></i></a>
-                              <a href="#"><i class="fas fa-globe"></i></a>
-                              <a href="#"><i class="fab fa-behance"></i></a>
-                          </div>
+                          
                          
                        </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-5">
-                        <div class="single-footer-caption mb-30">
-                            <div class="footer-tittle">
-                                <h4>Quick Links</h4>
-                                <ul>
-                                    <li><a href="#">About Mariana</a></li>
-                                    <li><a href="#">Our Best Rooms</a></li>
-                                    <li><a href="#">Our Photo Gellary</a></li>
-                                    <li><a href="#">Pool Service</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    
                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
                         <div class="single-footer-caption mb-30">
                             <div class="footer-tittle">
-                                <h4>Reservations</h4>
+                                <h4>Contact Us</h4>
                                 <ul>
-                                    <li><a href="#">Tel: 345 5667 889</a></li>
-                                    <li><a href="#">Skype: Marianabooking</a></li>
-                                    <li><a href="#">reservations@hotelriver.com</a></li>
+                                    <li><a href="#">Tel: +1 985-533-3322</a></li>
+                                    
+                                    
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-5">
-                        <div class="single-footer-caption mb-30">
-                            <div class="footer-tittle">
-                                <h4>Our Location</h4>
-                                <ul>
-                                    <li><a href="#">198 West 21th Street,</a></li>
-                                    <li><a href="#">Suite 721 New York NY 10016</a></li>
-                                </ul>
-                                <!-- Form -->
-                                 <div class="footer-form" >
-                                     <div id="mc_embed_signup">
-                                         <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                                         method="get" class="subscribe_form relative mail_part">
-                                             <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
-                                             class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
-                                             onblur="this.placeholder = ' Email Address '">
-                                             <div class="form-icon">
-                                               <button type="submit" name="submit" id="newsletter-submit"
-                                               class="email_icon newsletter-submit button-contactForm"><img src="assets/img/logo/form-iocn.jpg" alt=""></button>
-                                             </div>
-                                             <div class="mt-10 info"></div>
-                                         </form>
-                                     </div>
-                                 </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
         <!-- Footer End-->
     </footer>
+    
    
 	<!-- JS here -->
 	
