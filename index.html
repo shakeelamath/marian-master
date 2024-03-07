@@ -24,9 +24,25 @@
             <link rel="stylesheet" href="assets/css/style.css">
             <link rel="stylesheet" href="assets/css/responsive.css">
             <style>
-                .bigger-text {
-                    font-size: 1.5rem; /* Adjust the size as needed */
-                }
+               /* Default styles for larger screens */
+.h1-slider-caption h1 {
+    font-size: 2.5rem; /* Adjust the font size as needed */
+}
+
+.h1-slider-caption h3 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 767px) {
+    .h1-slider-caption h1 {
+        font-size: 2rem; /* Adjust the font size for smaller screens */
+    }
+
+    .h1-slider-caption h3 {
+        font-size: 1rem; /* Adjust the font size for smaller screens */
+    }
+}
             </style>
    </head>
 
@@ -102,16 +118,28 @@
                         <div class="row justify-content-center text-center">
                             <div class="col-xl-9">
                                 <div class="h1-slider-caption">
-                                    <h1 data-animation="fadeInUp" data-delay=".4s">LOUPE GROUP INTERNATIONAL LLC</h1>
-                                    <h3 data-animation="fadeInDown" data-delay=".4s">A GLOBAL COMPANY PROVIDING STRATEGIC SOLUTIONS</h3>
+                                    <h1 data-animation="fadeInUp" data-delay=".4s" style="font-size: 2.5rem;">LOUPE GROUP INTERNATIONAL LLC</h1>
+                                    <h3 data-animation="fadeInDown" data-delay=".4s" style="font-size: 1.5rem;">A GLOBAL COMPANY PROVIDING STRATEGIC SOLUTIONS</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-               
             </div>
         </div>
+        
+        <style>
+            /* Media query for smaller screens (e.g., mobile devices) */
+            @media only screen and (max-width: 767px) {
+                .h1-slider-caption h1 {
+                    font-size: 2rem; /* Adjust the font size for smaller screens */
+                }
+        
+                .h1-slider-caption h3 {
+                    font-size: 0.5rem; /* Adjust the font size for smaller screens */
+                }
+            }
+        </style>
         <!-- slider Area End-->
         <div class="d-md-flex flex-md-row flex-column mt-10">
             <div class="col-md-6 col-lg-6">
