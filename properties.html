@@ -50,10 +50,19 @@
     margin-bottom: 30px;
 }
 .hidden-projects {
-        display: none;
-        transition: max-height 1s ease-out; /* Add transition effect */
-        overflow: hidden;
-    }
+    text-align: left;
+    display: none;
+    transition: max-height 1s ease-out; /* Add transition effect */
+    overflow: hidden;
+    padding: auto;
+}
+
+/* Style for images within list items */
+li img {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 200px; /* Set a maximum height if needed */
+}
 
     .horizontal-projects {
         display: flex;
@@ -62,7 +71,7 @@
     }
 
     .country-projects {
-        text-align: left;
+        text-align: center;
         box-sizing: border-box;
         margin-bottom: 10px; /* Adjust margin as needed */
         padding: 20px;
