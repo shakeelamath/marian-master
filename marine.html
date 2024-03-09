@@ -26,7 +26,18 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
         <style>
-           
+           .room-img img {
+    height: 200px;
+    width: auto;  /* Set width to auto for maintaining aspect ratio */
+}
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+@media (max-width: 768px) {
+    .room-img img {
+        height: auto;  /* Allow the height to adjust based on the width */
+        max-width: 100%;  /* Make sure the image doesn't exceed the container width */
+    }
+}
     
             .centered-content {
                 text-align: center;
@@ -191,7 +202,7 @@
 
         <!-- slider Area Start-->
         <div class="slider-area">
-            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/aboutpage_hero.jpg" >
+            <div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="assets/img/hero/seavessel.png" >
                 <div class="container">
                     <div class="row ">
                         <div class="col-md-11 offset-xl-1 offset-lg-1 offset-md-1">
@@ -212,7 +223,7 @@
                 <div class="row">
                    <div class="col-xl-5 col-lg-6">
                         <div class="customer-img mb-120">
-                            <img src="assets/img/customer/customar1.png" class="customar-img1" alt="">
+                            <img src="assets/img/customer/home-img-1.jpg" class="customar-img1" alt="">
                             <img src="assets/img/customer/customar2.png" class="customar-img2" alt="">
                            
                         </div>
@@ -244,6 +255,92 @@
             </div>
         </section>
         <!-- Make customer End-->
+           <!-- Room Start -->
+           <section class="room-area r-padding1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8">
+                        <!--font-back-tittle  -->
+                        <div class="font-back-tittle mb-45">
+                            <div class="archivment-front">
+                                <h3>Our Team</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-2 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                               <img src="assets/img/rooms/Pribor.jpeg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3></a></h3>
+                                <div class="per-night">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                               <img src="assets/img/rooms/IMGL0238-Cropped_Ed71Vf9aa.jpeg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3></a></h3>
+                                <div class="per-night">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <img src="assets/img/rooms/Small-III.jpeg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3></a></h3>
+                                <div class="per-night">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <img src="assets/img/rooms/DSolon.jpeg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3></a></h3>
+                                <div class="per-night">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-6 col-md-6">
+                        <!-- Single Room -->
+                        <div class="single-room mb-50">
+                            <div class="room-img">
+                                <img src="assets/img/rooms/WNugent.jpeg" alt=""></a>
+                            </div>
+                            <div class="room-caption">
+                                <h3></a></h3>
+                                <div class="per-night">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </section>
+        <!-- Room End -->
    
 
         <!-- Gallery img Start-->
@@ -253,13 +350,13 @@
                     <div class="col-md-12">
                         <div class="gallery-active owl-carousel">
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery1.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/gallery/shipyard_2.png" alt=""></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery2.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/gallery/Matsonia_In_Focus2.jpg" alt="" style="height: 380px;"></a>
                             </div>
                             <div class="gallery-img">
-                                <a href="#"><img src="assets/img/gallery/gallery3.jpg" alt=""></a>
+                                <a href="#"><img src="assets/img/gallery/sea-vessel-2.png" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -267,6 +364,7 @@
             </div>
         </div>
         <!-- Gallery img End-->
+        
 
         
 
